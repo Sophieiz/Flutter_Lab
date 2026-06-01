@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCore // Documentación Flutter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-terminal">
+        <div class="marca-consola">
+            <span class="prompt">$</span>
+            <span class="texto-marca">SENA_DEV_LAB</span>
+        </div>
+        <nav class="menu-lineal">
+            <a href="#" class="enlace-activo">DOCUMENTACIÓN</a>
+            <a href="#">COMPONENTES</a>
+            <a href="#">ENTORNO</a>
+        </nav>
+    </header>
+
+    <main class="bloque-central">
+        <section class="panel-introduccion">
+            <div class="linea-decorativa"></div>
+            <div class="metadatos">ANÁLISIS Y DESARROLLO DE SOFTWARE // ADSO</div>
+            <h1>ENTORNO_FLUTTER</h1>
+            <p class="extracto">
+                Mapeo técnico y conceptos fundamentales para el desarrollo de aplicaciones multiplataforma con rendimiento nativo.
+            </p>
+        </section>
+
+        <section class="contenedor-tecnico">
+            
+            <div class="columna-principal">
+                <article class="modulo">
+                    <h2>¿QUÉ ES FLUTTER?</h2>
+                    <p>
+                        Es un framework de código abierto creado por Google para diseñar e implementar aplicaciones hermosas, compiladas de forma nativa para dispositivos móviles, web, escritorio y sistemas embebidos a partir de una única base de código. Su motor gráfico renderiza cada píxel directamente en la pantalla, asegurando una experiencia fluida y consistente en cualquier sistema operativo.
+                    </p>
+                </article>
+
+                <article class="modulo" style="margin-top: 30px;">
+                    <h2>¿QUÉ ES UN SDK Y QUÉ INCLUYE?</h2>
+                    <p>
+                        Un <strong>SDK (Software Development Kit)</strong> es un conjunto de herramientas, librerías, documentación y códigos de ejemplo que los programadores necesitan para desarrollar aplicaciones en una plataforma específica. 
+                    </p>
+                    <p style="margin-top: 10px; color: #ff00c8;">El SDK de Flutter incluye:</p>
+                    <ul class="lista-tecnica">
+                        <li><strong>Motor de Renderizado (Skia / Impeller):</strong> Compila y dibuja la interfaz directamente.</li>
+                        <li><strong>Compilador de Dart:</strong> Traduce el código a instrucciones nativas (AOT y JIT).</li>
+                        <li><strong>Herramientas de Depuración (DevTools):</strong> Herramientas para inspeccionar el árbol de widgets y analizar el rendimiento.</li>
+                        <li><strong>Librerías de Widgets:</strong> Colecciones completas basadas en Material Design (Android) y Cupertino (iOS).</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="columna-secundaria">
+                <article class="modulo">
+                    <h4>EL LENGUAJE // DART</h4>
+                    <p>Es el lenguaje de programación optimizado para el cliente en el que se escribe Flutter. Ofrece tipado fuerte, recolección de basura automática y capacidades de recarga rápida (Hot Reload) que aceleran el ciclo de desarrollo.</p>
+                </article>
+                
+                <article class="modulo">
+                    <h4>COMPONENTES // WIDGETS</h4>
+                    <p>En Flutter, todo es un widget. Son los bloques de construcción básicos de la interfaz; desde un simple texto, una alineación, un color de fondo, hasta pantallas enteras se estructuran mediante el anidamiento de widgets.</p>
+                </article>
+
+                <article class="modulo">
+                    <h4>ESTADO IMMUTABLE // STATELESSWIDGET</h4>
+                    <p>Un widget que no requiere un estado mutable. Se dibuja una sola vez a partir de la configuración inicial y su apariencia no cambia de forma interna durante el ciclo de vida de la pantalla.</p>
+                </article>
+
+                <article class="modulo">
+                    <h4>ESTADO DINÁMICO // STATEFULWIDGET</h4>
+                    <p>Un widget que posee un estado interno dinámico. Permite redibujar la interfaz de forma interactiva en tiempo real cuando los datos o las interacciones del usuario cambian (mediante el método <code class="codigo-inline">setState()</code>).</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-personal">
+        <div class="contenido-footer">
+            <p class="autor">DESARROLLADOR: <strong>Izabel Sofia Ortega Obando</strong></p>
+            <p class="ficha">FICHA: <span>317104</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
