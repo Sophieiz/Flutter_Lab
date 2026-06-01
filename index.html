@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevCore // Documentación Flutter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Flutter Desarrollo Mobile</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-    <header class="header-terminal">
-        <div class="marca-consola">
-            <span class="prompt">$</span>
-            <span class="texto-marca">SENA_DEV_LAB</span>
+    <header class="hero">
+        <div class="contenedor">
+            <span class="etiqueta">Desarrollo Mobile</span>
+            <h1>Flutter SDK</h1>
+            <p>Una introducción clara y práctica a Flutter, Dart, los widgets y la forma en que se construyen
+                aplicaciones móviles modernas.</p>
         </div>
-        <nav class="menu-lineal">
-            <a href="#" class="enlace-activo">DOCUMENTACIÓN</a>
-            <a href="#">COMPONENTES</a>
-            <a href="#">ENTORNO</a>
-        </nav>
     </header>
 
-    <main class="bloque-central">
-        <section class="panel-introduccion">
-            <div class="linea-decorativa"></div>
-            <div class="metadatos">ANÁLISIS Y DESARROLLO DE SOFTWARE // ADSO</div>
-            <h1>ENTORNO_FLUTTER</h1>
-            <p class="extracto">
-                Mapeo técnico y conceptos fundamentales para el desarrollo de aplicaciones multiplataforma con rendimiento nativo.
+    <main class="contenedor seccion-contenido">
+
+        <article class="tarjeta tarjeta-principal">
+            <h2>¿Por qué aprender Flutter?</h2>
+            <p>
+                Flutter permite crear aplicaciones visualmente atractivas, rápidas y funcionales para diferentes
+                plataformas usando una sola base de código. Para un desarrollador en formación, es una herramienta
+                importante porque combina diseño de interfaces, lógica de programación y buenas prácticas de desarrollo
+                mobile.
             </p>
-        </section>
+        </article>
 
-        <section class="contenedor-tecnico">
-            
-            <div class="columna-principal">
-                <article class="modulo">
-                    <h2>¿QUÉ ES FLUTTER?</h2>
-                    <p>
-                        Es un framework de código abierto creado por Google para diseñar e implementar aplicaciones hermosas, compiladas de forma nativa para dispositivos móviles, web, escritorio y sistemas embebidos a partir de una única base de código. Su motor gráfico renderiza cada píxel directamente en la pantalla, asegurando una experiencia fluida y consistente en cualquier sistema operativo.
-                    </p>
-                </article>
+        <section class="grilla-tarjetas">
 
-                <article class="modulo" style="margin-top: 30px;">
-                    <h2>¿QUÉ ES UN SDK Y QUÉ INCLUYE?</h2>
-                    <p>
-                        Un <strong>SDK (Software Development Kit)</strong> es un conjunto de herramientas, librerías, documentación y códigos de ejemplo que los programadores necesitan para desarrollar aplicaciones en una plataforma específica. 
-                    </p>
-                    <p style="margin-top: 10px; color: #ff00c8;">El SDK de Flutter incluye:</p>
-                    <ul class="lista-tecnica">
-                        <li><strong>Motor de Renderizado (Skia / Impeller):</strong> Compila y dibuja la interfaz directamente.</li>
-                        <li><strong>Compilador de Dart:</strong> Traduce el código a instrucciones nativas (AOT y JIT).</li>
-                        <li><strong>Herramientas de Depuración (DevTools):</strong> Herramientas para inspeccionar el árbol de widgets y analizar el rendimiento.</li>
-                        <li><strong>Librerías de Widgets:</strong> Colecciones completas basadas en Material Design (Android) y Cupertino (iOS).</li>
-                    </ul>
-                </article>
+            <div class="tarjeta">
+                <h3>¿Qué es Flutter SDK?</h3>
+                <p>Es un kit de desarrollo de software creado por Google. Su objetivo principal es permitir la creación
+                    de aplicaciones para Android, iOS, web y escritorio desde un mismo proyecto. Esto significa que el
+                    desarrollador puede escribir gran parte del código una sola vez y adaptarlo a varias plataformas.
+                </p>
+                <p style="margin-top: 10px; font-weight: bold; color: #0288D1;">El SDK incluye:</p>
+                <ul style="margin-top: 5px; padding-left: 20px; font-size: 14px; color: #546E7A;">
+                    <li>Herramientas para compilar y ejecutar.</li>
+                    <li>Motor de renderizado gráfico.</li>
+                    <li>Librerías de diseño Material y Cupertino.</li>
+                </ul>
             </div>
 
-            <div class="columna-secundaria">
-                <article class="modulo">
-                    <h4>EL LENGUAJE // DART</h4>
-                    <p>Es el lenguaje de programación optimizado para el cliente en el que se escribe Flutter. Ofrece tipado fuerte, recolección de basura automática y capacidades de recarga rápida (Hot Reload) que aceleran el ciclo de desarrollo.</p>
-                </article>
-                
-                <article class="modulo">
-                    <h4>COMPONENTES // WIDGETS</h4>
-                    <p>En Flutter, todo es un widget. Son los bloques de construcción básicos de la interfaz; desde un simple texto, una alineación, un color de fondo, hasta pantallas enteras se estructuran mediante el anidamiento de widgets.</p>
-                </article>
-
-                <article class="modulo">
-                    <h4>ESTADO IMMUTABLE // STATELESSWIDGET</h4>
-                    <p>Un widget que no requiere un estado mutable. Se dibuja una sola vez a partir de la configuración inicial y su apariencia no cambia de forma interna durante el ciclo de vida de la pantalla.</p>
-                </article>
-
-                <article class="modulo">
-                    <h4>ESTADO DINÁMICO // STATEFULWIDGET</h4>
-                    <p>Un widget que posee un estado interno dinámico. Permite redibujar la interfaz de forma interactiva en tiempo real cuando los datos o las interacciones del usuario cambian (mediante el método <code class="codigo-inline">setState()</code>).</p>
-                </article>
+            <div class="tarjeta">
+                <h3>Dart</h3>
+                <p>Dart es el lenguaje de programación utilizado por Flutter. Es un lenguaje moderno, orientado a
+                    objetos y diseñado para ser claro, organizado y eficiente. Su sintaxis es fácil de leer,
+                    especialmente para quienes ya han trabajado con lenguajes como Java, JavaScript o C#.</p>
             </div>
+
+            <div class="tarjeta">
+                <h3>¿Qué son los Widgets?</h3>
+                <p>Son los bloques de construcción fundamentales de las interfaces en Flutter. Todo elemento visual o
+                    estructural en la pantalla es un widget. Se organizan en un árbol jerárquico donde unos contienen a
+                    otros para dar forma a la aplicación.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>StatelessWidget</h3>
+                <p>Son widgets estáticos y sin estado mutable. Esto significa que una vez que se dibujan en la pantalla
+                    con su configuración inicial, su apariencia e información no cambian de forma interna durante su
+                    ciclo de vida.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>StatefulWidget</h3>
+                <p>Son widgets dinámicos que poseen un estado mutable interno. Permiten que la interfaz cambie y se
+                    redibuje en tiempo real en respuesta a interacciones del usuario, eventos o cargas de datos del
+                    sistema.</p>
+            </div>
+
         </section>
     </main>
 
     <footer class="footer-personal">
         <div class="contenido-footer">
-            <p class="autor">DESARROLLADOR: <strong>Izabel Sofia Ortega Obando</strong></p>
-            <p class="ficha">FICHA: <span>317104</span></p>
+            <p>Desarrollador: <strong>Izabel Sofia Ortega Obando</strong></p>
+            <p>Ficha: <strong>317104</strong></p>
         </div>
     </footer>
 
 </body>
+
 </html>
